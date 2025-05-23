@@ -1,0 +1,124 @@
+@use 'variables';
+
+
+.desktop_height {
+    @media (min-width: variables.$sm-size) {
+        height: 100vh;
+    }
+}
+
+
+.container_main_content {
+    height: 90%;
+    width: 65%;
+
+
+    // mobile
+    @media (max-width : variables.$sm_size) {
+        width: 95%;
+        height: auto;
+
+    }
+}
+
+
+.mention_prix_intersport {
+    // font-size: 0.8rem;
+    font-size: clamp(0.6rem, 1vw, 0.8rem);
+
+    @media (max-width : variables.$sm_size) {
+        font-size: clamp(0.4rem, 2vw, 0.7rem);
+        max-width: 25vw;
+    }
+
+
+
+}
+
+
+.container_photo_left {
+    // width: 100vw;
+    // height: 100vh;
+    width: 100%;
+    height: 100%;
+    background-image: url('../../assets/img/player.jpg');
+    background-size: cover;
+    background-position: center;
+
+    @media (max-width : variables.$sm_size) {
+        height: 30vh;
+        background-position: bottom;
+
+    }
+
+}
+
+
+
+
+
+
+
+.img_item {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.description_article {
+    // font-size: 0.8rem;
+    font-size: clamp(0.6rem, 1.5vw, 1rem);
+    display: -webkit-box;
+    -webkit-line-clamp: 2;/* Limite à 2 lignes */
+    -webkit-box-orient: vertical;
+    // height: 2.5rem;
+    height: clamp(1.8rem, 4vw, 3rem);
+    // letter-spacing: 0.02rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: normal;
+}
+
+
+
+.icons_notation {
+    font-size: 0.7rem;
+    letter-spacing: -0.2rem;
+    // display: flex;
+    // gap: 1px;
+}
+
+
+.note_article {
+    font-size: 0.7rem;
+
+
+}
+
+
+
+.container_prix {
+    min-height: 5vh;
+}
+
+
+.prix_principal_remise {
+    font-size: clamp(0.7rem, 1vw, 1rem);
+}
+
+.prix_principal_sans_remise {
+    font-size: clamp(0.7rem, 1vw, 1rem);
+}
+
+
+
+.prix_secondaire {
+    // font-size: 0.8rem;
+    font-size: clamp(0.7rem, 1vw, 0.8rem);
+
+    @media (min-width : variables.$sm-size) {
+        border-left: 2px solid grey;
+    }
+
+    // font-size: clamp(0.6rem, 1vw, 0.8rem);
+}

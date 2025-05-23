@@ -1,0 +1,109 @@
+@charset "UTF-8";
+.background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-image: url("../../assets/img/player.jpg");
+  background-size: cover;
+  background-position: center;
+  filter: blur(15px);
+  z-index: -1;
+}
+@media (max-width: 575px) {
+  .background {
+    background-color: white;
+    background-image: none;
+  }
+}
+
+@media (min-width: 575px) {
+  .desktop_height {
+    height: 100vh;
+  }
+}
+
+.container_main_content {
+  height: 90%;
+  width: 65%;
+}
+@media (max-width: 575px) {
+  .container_main_content {
+    width: 95%;
+    height: auto;
+  }
+}
+
+.mention_prix_intersport {
+  font-size: clamp(0.6rem, 1vw, 0.8rem);
+}
+@media (max-width: 575px) {
+  .mention_prix_intersport {
+    font-size: clamp(0.4rem, 2vw, 0.7rem);
+    max-width: 25vw;
+  }
+}
+
+.container_photo_left {
+  width: 100%;
+  height: 100%;
+  background-image: url("../../assets/img/player.jpg");
+  background-size: cover;
+  background-position: center;
+}
+@media (max-width: 575px) {
+  .container_photo_left {
+    height: 30vh;
+    background-position: bottom;
+  }
+}
+
+.img_item {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.description_article {
+  font-size: clamp(0.6rem, 1.5vw, 1rem);
+  display: -webkit-box;
+  -webkit-line-clamp: 2; /* Limite à 2 lignes */
+  -webkit-box-orient: vertical;
+  height: clamp(1.8rem, 4vw, 3rem);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: normal;
+}
+
+.icons_notation {
+  font-size: 0.7rem;
+  letter-spacing: -0.2rem;
+}
+
+.note_article {
+  font-size: 0.7rem;
+}
+
+.container_prix {
+  min-height: 5vh;
+}
+
+.prix_principal_remise {
+  font-size: clamp(0.7rem, 1vw, 1rem);
+}
+
+.prix_principal_sans_remise {
+  font-size: clamp(0.7rem, 1vw, 1rem);
+}
+
+.prix_secondaire {
+  font-size: clamp(0.7rem, 1vw, 0.8rem);
+}
+@media (min-width: 575px) {
+  .prix_secondaire {
+    border-left: 2px solid grey;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

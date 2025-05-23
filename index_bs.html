@@ -8,24 +8,248 @@
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
 
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
 
 <body>
+    <!-- Background (image ou fond blanc) -->
+    <div class="background"></div>
 
 
-<!-- <div class="d-none d-md-block">
+
+    <div class="d-flex flex-row justify-content-center align-items-sm-center mt-3 mt-sm-0 w-100 desktop_height">
+
+        <div class="container_main_content d-flex flex-column flex-sm-row bg-body">
+            <div class="container_photo_left w-100 d-flex flex-column align-items-center">
+                <p class="mt-auto mb-3 text-center text-white fw-semibold display-2">Football</p>
+                <button type="button" class="btn btn-light rounded-5 text-primary fw-semibold mb-5"><span
+                        class="mx-3">Voir toute la collection</span></button>
+            </div>
+
+            <div class="w-100 h-100 d-flex flex-column justify-content-between border">
+                <!-- Row 1 -->
+                <div class="d-flex flex-row w-100 h-100 border-bottom">
+                    <!-- Item 1 -->
+                    <div class="d-flex flex-column w-100 p-3 border-end position-relative">
+                        <!-- Div image -->
+                        <div class="w-100 h-100">
+                            <img class="img_item" src="assets\img\red_shoes.png" alt="">
+                        </div>
+                        <!-- Div description -->
+                        <!-- <div class="w-100 overflow-hidden">
+                            <p class="description_article text-truncate text-nowrap w-100 m-0 my-2">
+                                <span class="fw-bold me-1">ADIDAS</span>Chaussures de football moulées enfant Predator
+                                Club Terrai...
+                            </p>
+                        </div> -->
+                        <div class="">
+                            <p class="description_article m-0 my-2"><span class="fw-bold me-1">ADIDAS</span>Chaussures
+                                de
+                                football moulées enfant Predator Club Terrain</p>
+                        </div>
+                        <!-- Div description tronquée-->
+                        <!-- <div>
+                            <span class="d-inline-block description_article text-truncate"
+                                style="max-width: 10vw;"><b>ADIDAS</b> Chaussures de
+                                football moulées enfant Predator Club Terrain</span>
+                        </div> -->
+                        <!-- <div>
+                            <span class="d-inline-block description_article">
+                                <b>ADIDAS</b> Chaussures de football moulées enfant Predator Club Terrain
+                            </span>
+                        </div> -->
+
+
+                        <!-- Div note -->
+                        <div class="d-flex flex-row align-items-center">
+                            <div class="icons_notation d-inline-block me-1">
+                                <i class="bi bi-record-fill"></i>
+                                <i class="bi bi-record-fill"></i>
+                                <i class="bi bi-record-fill"></i>
+                                <i class="bi bi-record-fill"></i>
+                                <i class="bi bi-record-fill"></i>
+                                <!-- <i class="bi bi-record"></i> -->
+                            </div>
+                            <p class="note_article d-inline-block text-secondary fw-semibold m-0">3 avis</p>
+                        </div>
+                        <!-- Div prix -->
+                        <div class="container_prix d-flex flex-column flex-sm-row justify-content-start justify-content-sm-start align-items-sm-center mt-3 mt-sm-0">
+                        <!-- <div class="container_prix d-flex flex-column flex-sm-row justify-content-end justify-content-sm-start align-items-sm-center"> -->
+                             <!-- mt-3 -->
+                            <p class="prix_principal_remise d-inline-block m-0 text-danger fw-bold">34,99 €</p>
+                            <!-- <p class="prix_secondaire d-inline-block m-0 text-secondary">| prix conseillé 49.99 €</p> -->
+                            <p class="prix_secondaire d-inline-block m-0 text-body-tertiary fw-semibold ms-sm-1 ps-sm-1">Prix
+                                conseillé 49,99 €</p>
+                        </div>
+                        <!-- Mention prix Intersport -->
+                        <div class="position-absolute top-0 start-0 m-2 border border-3 border-danger px-1 bg-body">
+                            <p class="mention_prix_intersport m-0 text-uppercase text-danger fw-bold">Prix Intersport
+                            </p>
+                        </div>
+                    </div>
+                    <!-- Item 2 -->
+                    <div class="d-flex flex-column w-100 p-3 position-relative">
+                        <!-- Div image -->
+                        <div class="w-100 h-100">
+                            <img class="img_item" src="assets\img\t_shirt.png" alt="">
+                        </div>
+                        <!-- Div description -->
+                        <div>
+                            <p class="description_article m-0 my-2"><span class="fw-bold me-1">ADIDAS</span>Maillot de
+                                football homme Algérie extérieur 24</p>
+                        </div>
+                        <!-- Div note -->
+                        <div class="d-flex flex-row align-items-center">
+                            <div class="icons_notation d-inline-block me-1">
+                                <i class="bi bi-record-fill"></i>
+                                <i class="bi bi-record-fill"></i>
+                                <i class="bi bi-record-fill"></i>
+                                <i class="bi bi-record-fill"></i>
+                                <!-- <i class="bi bi-record-fill"></i> -->
+                                <i class="bi bi-record"></i>
+                            </div>
+                            <p class="note_article d-inline-block text-secondary fw-semibold m-0">75 avis</p>
+                        </div>
+                        <!-- Div prix -->
+                         <div class="container_prix d-flex flex-column flex-sm-row justify-content-start justify-content-sm-start align-items-sm-center mt-3 mt-sm-0">
+                         <!-- <div class="container_prix d-flex flex-column flex-sm-row justify-content-end justify-content-sm-start align-items-sm-center"> -->
+                        <!-- <div class="d-flex flex-row align-items-center mt-3"> -->
+                            <!-- <p class="prix_principal_remise d-inline-block m-0 me-1 text-danger fw-bold">34.99 €</p> -->
+                            <p class="prix_principal_sans_remise d-inline-block m-0 me-1 text-secondary fw-bold">99,99 €
+                            </p>
+                            <!-- <p class="prix_secondaire d-inline-block m-0 text-body-tertiary fw-semibold">| prix conseillé 49.99 €</p> -->
+                        </div>
+                        <!-- Mention prix Intersport -->
+                        <!-- <div class="position-absolute top-0 start-0 m-2 border border-3 border-danger px-1 bg-body">
+                            <p class="mention_prix_intersport m-0 text-uppercase text-danger fw-bold">Prix Intersport
+                            </p>
+                        </div> -->
+                    </div>
+                </div>
+                <!-- Row 2 -->
+                <div class="d-flex flex-row w-100 h-100">
+                    <!-- Item 3 -->
+                    <div class="d-flex flex-column w-100 p-3 border-end position-relative">
+                        <!-- Div image -->
+                        <div class="w-100 h-100">
+                            <img class="img_item" src="assets\img\black_shoes.png" alt="">
+                        </div>
+                        <!-- Div description -->
+                        <div>
+                            <p class="description_article m-0 my-2"><span class="fw-bold me-1">ADIDAS</span>Chaussures
+                                de
+                                football moulées homme Copa Mundial</p>
+                        </div>
+                        <!-- Div note -->
+                        <div class="d-flex flex-row align-items-center">
+                            <div class="icons_notation d-inline-block me-1">
+                                <i class="bi bi-record-fill"></i>
+                                <i class="bi bi-record-fill"></i>
+                                <i class="bi bi-record-fill"></i>
+                                <i class="bi bi-record-fill"></i>
+                                <i class="bi bi-record-fill"></i>
+                                <!-- <i class="bi bi-record"></i> -->
+                            </div>
+                            <p class="note_article d-inline-block text-secondary fw-semibold m-0">251 avis</p>
+                        </div>
+                        <!-- Div prix -->
+                        <div class="container_prix d-flex flex-column flex-sm-row justify-content-start justify-content-sm-start align-items-sm-center mt-3 mt-sm-0">
+                        <!-- <div class="d-flex flex-row align-items-center mt-3"> -->
+                            <p class="prix_principal_remise d-inline-block m-0 me-1 text-danger fw-bold">129.99 €</p>
+                            <!-- <p class="prix_secondaire d-inline-block m-0 text-secondary">| prix conseillé 49.99 €</p> -->
+                            <p class="prix_secondaire d-inline-block m-0 text-body-tertiary fw-semibold ms-sm-1 ps-sm-1">Prix
+                                conseillé 179.99 €</p>
+                            <!-- <p class="prix_secondaire d-inline-block m-0 text-body-tertiary fw-semibold">| prix conseillé 179.99 €</p> -->
+                        </div>
+                        <!-- Mention prix Intersport -->
+                        <div class="position-absolute top-0 start-0 m-2 border border-3 border-danger px-1 bg-body">
+                            <p class="mention_prix_intersport m-0 text-uppercase text-danger fw-bold">Prix Intersport
+                            </p>
+                        </div>
+                    </div>
+                    <!-- Item 4 -->
+                    <div class="d-flex flex-column w-100 p-3 position-relative">
+                        <!-- Div image -->
+                        <div class="w-100 h-100">
+                            <img class="img_item" src="assets\img\white_shoes.png" alt="">
+                        </div>
+                        <!-- Div description -->
+                        <div>
+                            <p class="description_article m-0 my-2"><span class="fw-bold me-1">ADIDAS</span>Chaussures
+                                de
+                                football moulées enfant F50 Club Terrain</p>
+                        </div>
+                        <!-- Div note -->
+                        <div class="d-flex flex-row align-items-center">
+                            <div class="icons_notation d-inline-block me-1">
+                                <i class="bi bi-record-fill"></i>
+                                <i class="bi bi-record-fill"></i>
+                                <i class="bi bi-record-fill"></i>
+                                <i class="bi bi-record-fill"></i>
+                                <!-- <i class="bi bi-record-fill"></i> -->
+                                <i class="bi bi-record"></i>
+                            </div>
+                            <p class="note_article d-inline-block text-secondary fw-semibold m-0">9 avis</p>
+                        </div>
+                        <!-- Div prix -->
+                        <div class="container_prix d-flex flex-column flex-sm-row justify-content-start justify-content-sm-start align-items-sm-center mt-3 mt-sm-0">
+                        <!-- <div class="d-flex flex-row align-items-center mt-3"> -->
+                            <!-- <p class="prix_principal_remise d-inline-block m-0 me-1 text-danger fw-bold">34.99 €</p> -->
+                            <p class="prix_principal_sans_remise d-inline-block m-0 me-1 text-secondary fw-bold">49,99 €
+                            </p>
+                            <!-- <p class="prix_principal_sans_remise d-inline-block m-0 me-1 text-secondary fw-bold">49.99 €
+                            </p> -->
+                            
+                            <!-- <p class="prix_secondaire d-inline-block m-0 text-body-tertiary fw-semibold">| prix conseillé 49.99 €</p> -->
+                        </div>
+                        <!-- Mention prix Intersport -->
+                        <!-- <div class="position-absolute top-0 start-0 m-2 border border-3 border-danger px-1 bg-body">
+                            <p class="mention_prix_intersport m-0 text-uppercase text-danger fw-bold">Prix Intersport
+                            </p>
+                        </div> -->
+                    </div>
+                </div>
+
+            </div>
+
+
+
+
+
+        </div>
+
+
+
+        <!-- <div class="bg-body w-75 text-center h-75">test</div> -->
+        <!-- <div class="bg-body w-75 text-center h-75"  style="min-height: 90vh;">test</div> -->
+
+
+    </div>
+
+
+
+
+
+    <!-- <div style="
+    position: fixed; 
+    top: 0; 
+    left: 0; 
+    width: 100vw; 
+    height: 100vh; 
+    background-image: url('assets/img/player.jpg'); 
+    background-size: cover; 
+    background-position: center; 
+    filter: blur(15px); 
+    z-index: -1;">
+    </div> -->
+
+
+    <!-- <div class="d-none d-md-block">
 <img src="assets/img/player.jpg" class="img-fluid" alt="...">
     
 </div> -->
-    
-
-
-
-
-
-
 
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"
